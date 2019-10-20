@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create User</title>
+</head>
+
+<body>
+    <h1>Create User</h1>
+    <hr>
+    <form action="create_user.html" method="GET" enctype="application/x-www-form-urlencoded">
+        <label>Username</label>
+        <input type="text" name="username" placeholder="username" maxlength="12" size="30" required pattern="[a-zA-Z]+$" title="Only text is allowed">
+        <fieldset>
+            <legend>User Form</legend>
+            <label for="password id">Password</label>
+            <input type="password" Password size="30" maxlength="8" placeholder="password" required pattern="\d+" title="Only numbers is allowed">
+            <br>
+            <br>
+            Select your favourite superheroe <br>
+            <input type="radio" name="superheros" value="Wonder Woman" checked=checked>Wonder Woman,becouse they rock!
+            your call
+            <input type="radio" name="superheros" value="Superman"> <label>Superman</label>
+            <input type="radio" name="superheros" value="Batman">Batman
+            <input type="radio" name="superheros" value="Flash">Flash
+            <input type="radio" name="superheros" value="Thor & Hulk">Thor & Hulk
+            <br>
+            <br>
+            Select your favourite video game <br>
+            <input type="checkbox" name="videogames" value="Fifa" checked=checked>Fifa
+            <input type="checkbox" name="videogames" value="Uncharted" checked=checked>Uncharted
+            <input type="checkbox" name="videogames" value="NHL">NHL
+            <input type="checkbox" name="videogames" value="Residen">Residen
+            <input type="hidden" name="userid" value="2300">
+            <br><br>
+            <input type="date" value="birthdate">
+            <input type="email" name="email" id="" placeholder="email">
+            <label for="url">
+                url:
+            </label>
+            <input type="url" name="personalsite" />
+            <br>
+            <br>
+            <button type="submit">submit</button>
+            <br>
+            <br>
+        </fieldset>
+        <input type="image" name="Login" src="img/register_button.png" width="50" height="50">
+        <input type="submit" name="submit">
+    </form>
+    <br>
+    <form action="https://www.google.ca/search">google
+        <input type="text" name="q" placeholder="search">
+        <button type="Submit">Submit</button>
+    </form>
+</body>
+
+</html>
